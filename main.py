@@ -7,4 +7,6 @@ if __name__ == "__main__":
     letters_set = set(letters)
     
     result = return_relevant_words(letters_set, key_letter, words)
-    print(sorted(result, key=len))
+    sorted_result = sorted(result, key=len)
+    for word in sorted_result:
+        print(f"{word}")
